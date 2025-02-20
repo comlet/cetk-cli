@@ -1,0 +1,30 @@
+site_name: Documentation of cetk-cli
+nav:
+  - Home: index.md
+theme:
+  name: material
+  logo: img/comlet_Claim-2021-darunter-800x403px-Web.png
+  scheme: default
+  primary: custom
+  accent: custom
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigations.tracking
+    - navigation.top
+    - navigation.instant
+    - content.code.annotate
+    - content.tabs.link
+    - version-dropdown
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.emoji
+  - toc:
+      permalink: true
+extra_css:
+  - stylesheets/extra.css
+extra:
+  version:
+    provider: mike

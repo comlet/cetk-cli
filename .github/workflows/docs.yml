@@ -1,0 +1,34 @@
+name: Deploy cetk-cli Documentation
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Install MkDocs
+        run: |
+          pip install mkdocs-material
+          pip install mkdocs-autorefs mkdocs-include-markdown-plugin mike
+
+      - name: Read version from file
+        run: echo "CETK_CLI_VERSION=$(cat VERSION)" >> $GITHUB_ENV
+
+      - name: Deploy MkDocs to GitHub Pages
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          mike deploy --branch gh-pages $CETK_CLI_VERSION latest --push
+          mike set-default --branch gh-pages latest --push
