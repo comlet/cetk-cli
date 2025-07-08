@@ -1,4 +1,5 @@
 site_name: Documentation of cetk-cli
+docs_dir: "./docs"
 nav:
   - Home: index.md
 theme:
@@ -14,6 +15,7 @@ theme:
     - navigation.top
     - navigation.instant
     - content.code.annotate
+    - content.code.copy
     - content.tabs.link
     - version-dropdown
 markdown_extensions:
@@ -23,6 +25,7 @@ markdown_extensions:
   - pymdownx.emoji
   - toc:
       permalink: true
+      toc_depth: 6
 extra_css:
   - stylesheets/extra.css
 extra:
