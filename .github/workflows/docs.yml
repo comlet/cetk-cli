@@ -45,4 +45,4 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          mike deploy --branch gh-pages unstable unstable --push
+          mike deploy --branch gh-pages unstable --push
