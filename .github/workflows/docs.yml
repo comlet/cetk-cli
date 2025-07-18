@@ -21,7 +21,7 @@ jobs:
       - name: Install MkDocs
         run: |
           pip install mkdocs-material
-          pip install mkdocs-autorefs mkdocs-include-markdown-plugin mike
+          pip install mkdocs-autorefs mkdocs-include-markdown-plugin pymdown-extensions mike
 
       - name: Read version from file
         run: echo "CETK_CLI_VERSION=$(cat VERSION)" >> $GITHUB_ENV
