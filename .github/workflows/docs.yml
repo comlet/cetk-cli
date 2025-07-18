@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - develop
 
 jobs:
   deploy:
@@ -24,15 +25,24 @@ jobs:
           pip install mkdocs-autorefs mkdocs-include-markdown-plugin pymdown-extensions mike
 
       - name: Read version from file
+        if: github.ref == 'refs/heads/main'
         run: echo "CETK_CLI_VERSION=$(cat VERSION)" >> $GITHUB_ENV
 
       - name: Fetch gh-pages branch
         run: |
           git fetch origin gh-pages:gh-pages        
 
-      - name: Deploy MkDocs to GitHub Pages
+      - name: Deploy Release Doc to GitHub Pages
+        if: github.ref == 'refs/heads/main'
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           mike deploy --branch gh-pages $CETK_CLI_VERSION latest --push
           mike set-default --branch gh-pages latest --push
+      
+      - name: Deploy Unstable Doc to Github Pages
+        if: github.ref == 'refs/heads/develop'
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          mike deploy --branch gh-pages unstable unstable --push
