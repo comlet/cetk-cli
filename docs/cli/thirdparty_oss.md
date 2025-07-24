@@ -1,0 +1,13 @@
+A list of third-party OSS software used to build this application (incl. a reference to their license)
+
+- [Python 3.12](https://python.org){target="_blank"} - [License](https://docs.python.org/3.12/license.html)
+- [python-dotenv](https://github.com/theskumar/python-dotenv){target="_blank"} - [License](https://github.com/theskumar/python-dotenv?tab=BSD-3-Clause-1-ov-file#readme)
+- [packaging](https://github.com/pypa/packaging){target="_blank"} - [License](https://github.com/pypa/packaging?tab=Apache-2.0-2-ov-file)
+- [findpython](https://github.com/frostming/findpython){target="_blank"} - [License](https://github.com/frostming/findpython?tab=MIT-1-ov-file#readme)
+- [tomlkit](https://github.com/sdispater/tomlkit){target="_blank"} - [License](https://github.com/python-poetry/tomlkit?tab=MIT-1-ov-file#readme)
+- [cryptography](https://github.com/pyca/cryptography){target="_blank"} - [License](https://github.com/pyca/cryptography?tab=Apache-2.0-2-ov-file)
+- [platformdirs](https://github.com/tox-dev/platformdirs){target="_blank"} - [License](https://github.com/tox-dev/platformdirs?tab=MIT-1-ov-file#readme)
+- [httpx](https://github.com/encode/httpx){target="_blank"} - [License](https://github.com/encode/httpx?tab=BSD-3-Clause-1-ov-file#readme)
+- [tenacity](https://github.com/jd/tenacity){target="_blank"} - [License](https://github.com/jd/tenacity?tab=License-1-ov-file)
+- [pybreaker](http://github.com/danielfm/pybreaker){target="_blank"} - [License](https://github.com/danielfm/pybreaker?tab=BSD-3-Clause-1-ov-file#readme)
+- [pathspec](https://github.com/cpburnz/python-pathspec){target="_blank"} - [License](https://github.com/cpburnz/python-pathspec?tab=MPL-2.0-1-ov-file#readme)
