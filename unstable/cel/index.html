@@ -12,23 +12,25 @@
         <meta name="author" content="comlet Verteilte Systeme GmbH">
       
       
-        <link rel="canonical" href="https://comlet.github.io/cetk-cli/unstable/">
+        <link rel="canonical" href="https://comlet.github.io/cetk-cli/unstable/cel/">
       
       
+        <link rel="prev" href="../cli/thirdparty_oss/">
       
-        <link rel="next" href="control_env/">
+      
+        <link rel="next" href="../cesd/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
       
-        <title>comlet Embedded TestKit Documentation</title>
+        <title>Embedded Library - comlet Embedded TestKit Documentation</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
       
       
 
@@ -47,9 +49,9 @@
       
     
     
-      <link rel="stylesheet" href="stylesheets/extra.css">
+      <link rel="stylesheet" href="../stylesheets/extra.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -68,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#overview" class="md-skip">
+        <a href="#comlet-embedded-library-cel" class="md-skip">
           Skip to content
         </a>
       
@@ -88,9 +90,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="comlet Embedded TestKit Documentation" class="md-header__button md-logo" aria-label="comlet Embedded TestKit Documentation" data-md-component="logo">
+    <a href=".." title="comlet Embedded TestKit Documentation" class="md-header__button md-logo" aria-label="comlet Embedded TestKit Documentation" data-md-component="logo">
       
-  <img src="img/comlet_Claim-2021-darunter-800x403px-Web.png" alt="logo">
+  <img src="../img/comlet_Claim-2021-darunter-800x403px-Web.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -107,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              Embedded Library
             
           </span>
         </div>
@@ -172,11 +174,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
         
   
   
@@ -197,7 +197,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="control_env/" class="md-tabs__link">
+        <a href="../control_env/" class="md-tabs__link">
           
   
   
@@ -219,7 +219,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="home_folder/" class="md-tabs__link">
+        <a href="../home_folder/" class="md-tabs__link">
           
   
   
@@ -241,7 +241,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="cli/" class="md-tabs__link">
+        <a href="../cli/" class="md-tabs__link">
           
   
   
@@ -259,9 +259,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="cel/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
@@ -280,7 +282,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="cesd/" class="md-tabs__link">
+      <a href="../cesd/" class="md-tabs__link">
         
   
   
@@ -310,9 +312,7 @@
           
             
               
-                
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -323,9 +323,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="comlet Embedded TestKit Documentation" class="md-nav__button md-logo" aria-label="comlet Embedded TestKit Documentation" data-md-component="logo">
+    <a href=".." title="comlet Embedded TestKit Documentation" class="md-nav__button md-logo" aria-label="comlet Embedded TestKit Documentation" data-md-component="logo">
       
-  <img src="img/comlet_Claim-2021-darunter-800x403px-Web.png" alt="logo">
+  <img src="../img/comlet_Claim-2021-darunter-800x403px-Web.png" alt="logo">
 
     </a>
     comlet Embedded TestKit Documentation
@@ -337,19 +337,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -360,7 +351,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -399,7 +389,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="control_env/" class="md-nav__link ">
+            <a href="../control_env/" class="md-nav__link ">
               
   
   
@@ -483,7 +473,7 @@
   
   
     <li class="md-nav__item">
-      <a href="control_env/native/" class="md-nav__link">
+      <a href="../control_env/native/" class="md-nav__link">
         
   
   
@@ -506,7 +496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="control_env/docker/" class="md-nav__link">
+      <a href="../control_env/docker/" class="md-nav__link">
         
   
   
@@ -584,7 +574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="control_env/cloud/" class="md-nav__link">
+      <a href="../control_env/cloud/" class="md-nav__link">
         
   
   
@@ -651,7 +641,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="home_folder/" class="md-nav__link ">
+            <a href="../home_folder/" class="md-nav__link ">
               
   
   
@@ -686,7 +676,7 @@
   
   
     <li class="md-nav__item">
-      <a href="home_folder/source_home/" class="md-nav__link">
+      <a href="../home_folder/source_home/" class="md-nav__link">
         
   
   
@@ -709,7 +699,7 @@
   
   
     <li class="md-nav__item">
-      <a href="home_folder/output_home/" class="md-nav__link">
+      <a href="../home_folder/output_home/" class="md-nav__link">
         
   
   
@@ -732,7 +722,7 @@
   
   
     <li class="md-nav__item">
-      <a href="home_folder/temp_home/" class="md-nav__link">
+      <a href="../home_folder/temp_home/" class="md-nav__link">
         
   
   
@@ -797,7 +787,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="cli/" class="md-nav__link ">
+            <a href="../cli/" class="md-nav__link ">
               
   
   
@@ -832,7 +822,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cli/install/" class="md-nav__link">
+      <a href="../cli/install/" class="md-nav__link">
         
   
   
@@ -855,7 +845,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cli/config/" class="md-nav__link">
+      <a href="../cli/config/" class="md-nav__link">
         
   
   
@@ -878,7 +868,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cli/global_options/" class="md-nav__link">
+      <a href="../cli/global_options/" class="md-nav__link">
         
   
   
@@ -901,7 +891,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cli/default_options/" class="md-nav__link">
+      <a href="../cli/default_options/" class="md-nav__link">
         
   
   
@@ -973,7 +963,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cli/init/" class="md-nav__link">
+      <a href="../cli/init/" class="md-nav__link">
         
   
   
@@ -996,7 +986,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cli/run/" class="md-nav__link">
+      <a href="../cli/run/" class="md-nav__link">
         
   
   
@@ -1027,7 +1017,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cli/thirdparty_oss/" class="md-nav__link">
+      <a href="../cli/thirdparty_oss/" class="md-nav__link">
         
   
   
@@ -1054,10 +1044,19 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="cel/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1068,6 +1067,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1079,7 +1079,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cesd/" class="md-nav__link">
+      <a href="../cesd/" class="md-nav__link">
         
   
   
@@ -1102,9 +1102,7 @@
             
             
               
-                
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1127,57 +1125,54 @@
               <article class="md-content__inner md-typeset">
                 
                   
-  
 
 
 
-
-<h1 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h1>
-<p>comlet's Embedded TestKit (<abbr title="comlet Embedded TestKit">cETK</abbr>) is a platform independent (embedded) <a href="https://glossary.istqb.org/en_US/term/test-automation-solution" target="_blank">test automation solution</a> and <a href="https://en.wikipedia.org/wiki/Robotic_process_automation" target="_blank">Robotic Process Automation</a> (<abbr title="Robotic Process Automation">RPA</abbr>) environment which consists of the following parts:</p>
-<p><img alt="EmbeddedTestKit_Env" src="md/images/Embedded_TestKit_Overview.png" /></p>
-<p>Main emphasis of test automation with Embedded TestKit (but not limited to) is black-box and end-to-end testing.</p>
-<p>The architecture of Embedded TestKit inherits from the generic Test Automation Architecture (<abbr title="generic Test Automation Architecture">gTAA</abbr>) as <a href="http://istqb.org/?sdm_process_download=1&amp;download_id=3435" target="_blank">described by ISTQB(tm) in their Advanced Level Syllabus for Test Automation Engineer</a>.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Key Concepts</label><label for="__tabbed_1_2">Key Features</label><label for="__tabbed_1_3">Key Properties</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
+<h1 id="comlet-embedded-library-cel">comlet Embedded Library (<abbr title="comlet Embedded Library">cEL</abbr>)<a class="headerlink" href="#comlet-embedded-library-cel" title="Permanent link">&para;</a></h1>
+<p>A <abbr title="comlet Embedded Library">cEL</abbr> is a pure software library that extends the capability of the <a href="../control_env/">control environment</a>
+and therefore the possibilities for test automation<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.
+This can be done by providing interfaces to additional tools<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> or implementing additional protocol layer to communicate
+with the <abbr title="System Under Test">SUT</abbr><sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>.</p>
+<p>Each <abbr title="comlet Embedded Library">cEL</abbr> brings along a well-defined, low-level keyword library for Robot Framework on top of which new (user) keyword libraries
+may be implemented.</p>
+<details class="example">
+<summary>Examples for already available <abbr title="comlet Embedded Library">cEL</abbr></summary>
 <ul>
-<li><a href="control_env/">Control Environment</a><ul>
-<li><a href="https://robotframework.org/" target="_blank">Robot Framework</a> as Test Automation Framework</li>
-<li><a href="https://www.python.org/" target="_blank">Python</a></li>
-<li><a href="https://github.com/MarketSquare/robotframework-tidy" target="_blank">Tidy</a> as test source beautifier</li>
-<li><a href="https://github.com/loomanw/robotframework-keepasslibrary" target="_blank">KeePass Library</a> for managing secrets</li>
-<li><a href="https://github.com/MarketSquare/robotframework-robocop" target="_blank">Robocop</a> for static (test) source code analysis</li>
-<li>Optional<ul>
-<li>Thirdparty/external technology/device driver libraries</li>
-<li><a href="cel/">comlet Embedded Libraries (<abbr title="comlet Embedded Library">cEL</abbr>)</a></li>
+<li>OCR Library: Extends test cases with the power of text recognition (by <a href="https://github.com/tesseract-ocr/tesseract" target="_blank">Tesseract</a>)</li>
+<li>MAVLink Library: Extends test cases to communicate with airborne drones by <a href="https://mavlink.io/" target="_blank">MAVLink</a> protocol</li>
+<li>SCPI Library: Extends test cases to be able to talk to various <a href="https://en.wikipedia.org/wiki/Standard_Commands_for_Programmable_Instruments" target="_blank">SCPI protocol</a>
+  enabled hardware measurement devices</li>
+<li><abbr title="Android Debug Bridge">ADB</abbr> Library: Extends test cases to be able to talk to mobile devices by <a href="https://developer.android.com/tools/adb?hl=en" target="_blank"><abbr title="Android Debug Bridge">ADB</abbr></a></li>
+<li>Qt Squish Library: Extends test cases to be able to utilize <a href="https://www.qt.io/quality-assurance/squish">Qt's Squish GUI testing tool</a></li>
+<li><abbr title="Message Queuing Telemetry Transport">MQTT</abbr> Library: Extends test cases to be able to talk to <abbr title="Industrial Internet of Things">IIoT</abbr> devices via <abbr title="Message Queuing Telemetry Transport">MQTT</abbr></li>
+<li>NETIO M2M JSON API Library: Extends test cases to be able to talk to <a href="https://www.netio-products.com/en">NETIO devices</a>
+  via their <a href="https://www.netio-products.com/en/software/open-api" target="_blank">M2M JSON API</a></li>
+<li>Cleware USB Multiplexer Library: Extends test cases to be able to control USB Multiplexer <a href="https://www.cleware-shop.de/epages/63698188.sf/en_GB/?ViewObjectPath=%2FShops%2F63698188" target="_blank">by Cleware</a></li>
+<li>Public Transport Protocol Library: Extends test cases to be able to communicate with <abbr title="Integrated On-Board Information System based on Internet Protocol (IP)">IBIS-IP</abbr><sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup> and <abbr title="Information Technology for Public Transport">ITxPT</abbr> devices</li>
+<li>XLM Schema Validation Library: Extends test cases to be able to validate XML strings against an XML schema</li>
 </ul>
+</details>
+<details class="info">
+<summary>Do you need a library implemented?</summary>
+<p>We are happy to help you out if you have the need for a particular library implementation.
+Feel free to contact <a href="mailto:sales@comlet.de?subject=cEL Inquiry">our sales</a> for further details.</p>
+</details>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Besides the already available Robot Framework ecosystem&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
-</ul>
+<li id="fn:2">
+<p>Those tools need to run in the control environment as well&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
-<li><a href="home_folder/source_home/">Source Home @ Home Folder</a></li>
-<li><a href="cli/">Command Line Interface "<abbr title="comlet Embedded TestKit Command Line Interface">cetk-cli</abbr>"</a></li>
-<li><a href="cesd/">comlet Embedded Simulation Devices (<abbr title="comlet Embedded Simulation Device">cESD</abbr>)</a></li>
-<li><a href="https://robotframework.org/robotframework/7.0/RobotFrameworkUserGuide.html#creating-test-cases" target="_blank">Frontend to define test cases according to ISO29119-5</a> (provided by Robot Framework)</li>
-</ul>
-</div>
-<div class="tabbed-block">
-<ul>
-<li>Embedded Ready via <abbr title="comlet Embedded Simulation Device">cESD</abbr></li>
-<li>Keyword-Driven (ISO29119-5)</li>
-<li>Test-Driven</li>
-<li>Continuous Testing (by integration with a <abbr title="Continuous Integration / Continuous Deployment">CI/CD</abbr> processor)</li>
-<li>Functional and non-functional testing (ISO25010)</li>
-<li>Behavior- and Data-Driven</li>
-</ul>
-</div>
-<div class="tabbed-block">
-<ul>
-<li>Flexible Environment/Architecture</li>
-<li>Augmented Requirements</li>
-<li>Complexity Reduction</li>
-</ul>
-</div>
-</div>
+<li id="fn:3">
+<p>Either via hardware interface already available (only on premise) and/or <a href="../cesd/"><abbr title="comlet Embedded Simulation Device">cESD</abbr></a>&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p><a href="https://www.vdv.de/ip-kom-oev.aspx" target="_blank">VDV 301 Standard</a>&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+</ol>
 </div>
 
 
@@ -1186,13 +1181,8 @@
 
 
 
-  
-  
 
 
-
-
-  
 
 
 
@@ -1246,10 +1236,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.tracking", "navigation.top", "navigation.instant", "navigation.instant.progress", "navigation.indexes", "content.code.annotate", "content.code.copy", "content.tabs.link", "version-dropdown"], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.tracking", "navigation.top", "navigation.instant", "navigation.instant.progress", "navigation.indexes", "content.code.annotate", "content.code.copy", "content.tabs.link", "version-dropdown"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="assets/javascripts/bundle.56ea9cef.min.js"></script>
+      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
     
   </body>

@@ -59,3 +59,17 @@
 .md-content a:hover {
   color: #7f0000 !important; /* Accent color on hover */
 }
+
+.md-typeset .tabbed-labels > label {
+    font-size: 1.05em;      /* Default is ca. 0.98em */
+    padding: 0.6em 1.5em;   /* Default is 0.5em 1.5em */
+    letter-spacing: 0.03em; /* Optional */
+}
+
+@media (max-width: 768px) {
+    /* On lower resolutions, make tabs smaller */
+    .md-typeset .tabbed-labels > label {
+        font-size: 1em;
+        padding: 0.5em 1.2em;
+    }
+}
