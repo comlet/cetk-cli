@@ -1,7 +1,37 @@
-site_name: Documentation of cetk-cli
-docs_dir: "./docs"
+site_name: comlet Embedded TestKit Documentation
+site_url: https://comlet.github.io/cetk-cli/
+site_author: comlet Verteilte Systeme GmbH
+site_description: >-
+  This is the documentation of comlet's Embedded TestKit (cETK)
+  test automation solution
+
+copyright: Copyright &copy; 2025 comlet Verteilte Systeme GmbH
 nav:
-  - Home: index.md
+  - Overview: index.md
+  - Control Environments:
+    - control_env/index.md
+    - On Premise:
+      - Native: control_env/native.md
+      - Docker: control_env/docker.md
+    - Testing as a Service:
+      - Cloud: control_env/cloud.md
+  - Home Folders:
+    - home_folder/index.md
+    - Source Home: home_folder/source_home.md
+    - Output Home: home_folder/output_home.md
+    - Temp Home: home_folder/temp_home.md
+  - cetk-cli:
+    - cli/index.md
+    - Installation: cli/install.md
+    - Configuration: cli/config.md
+    - Global Options: cli/global_options.md
+    - Default Options: cli/default_options.md
+    - Sub-Commands:
+      - cetk init: cli/init.md
+      - cetk run: cli/run.md
+    - Thirdparty OSS: cli/thirdparty_oss.md
+  - Embedded Library: cel/index.md
+  - Embedded Simulation Device: cesd/index.md
 theme:
   name: material
   logo: img/comlet_Claim-2021-darunter-800x403px-Web.png
@@ -10,22 +40,44 @@ theme:
   accent: custom
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
-    - navigations.tracking
+    - navigation.tracking
     - navigation.top
     - navigation.instant
+    - navigation.instant.progress
+    - navigation.indexes
     - content.code.annotate
     - content.code.copy
     - content.tabs.link
     - version-dropdown
 markdown_extensions:
   - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - pymdownx.snippets:
+      base_path: docs
+      auto_append: ["glossary.md"]
+  - pymdownx.extra
   - pymdownx.highlight
-  - pymdownx.superfences
-  - pymdownx.emoji
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - toc:
       permalink: true
-      toc_depth: 6
+      toc_depth: 3
 extra_css:
   - stylesheets/extra.css
 extra:
