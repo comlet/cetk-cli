@@ -110,7 +110,7 @@ Defines `<Output Home>/cetk_testdoc.html` as default output file and HTML format
 Default config for linting that fits perfectly with the beautifier `robotidy`.
 
 ### Default Output Report
-Defines `<Output Home>/cetk_lint_report.html` as default output report.
+Defines `<Output Home>/cetk_lint_report.txt` as default output report.
 
 ## robotidy
 
