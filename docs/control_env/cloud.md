@@ -35,6 +35,14 @@ identify them and skip upload if sources already exist[^2].
 If additional files from [`Output Home`](../home_folder/output_home.md) or [`Temp Home`](../home_folder/temp_home.md) shall be uploaded, the [global option](../cli/global_options.md#--cloud-add-upload-path-path)
     `--cloud-add-upload-path` may be used. Files within this path are not filtered by the allowlist but also not recursively considered.  
 
+!!! warning
+    Some system or sensitive folders are in general not allowed for sources to be uploaded from.
+    This is platform-specific and includes both system root and global config folders as well as
+    some tool-specific ones from the user's home.
+
+    There will be an error message indicating that **the source path is not allowed to be uploaded**.
+    In such case, it is adviced to move [`Source Home`](../home_folder/source_home.md) into a different base folder.
+
 ### Filter Sources for Upload
 To prevent uncontrolled upload of any file within [`Source Home`](../home_folder/source_home.md), [cetk-cli](../cli/index.md) uses an allowlist to filter folders and files
 based on their relative path within [`Source Home`](../home_folder/source_home.md)[^3].
