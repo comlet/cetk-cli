@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
     
     
       
@@ -30,7 +30,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e53b48f4.min.css">
       
       
 
@@ -1380,7 +1380,7 @@ Feel free to contact <a href="mailto:sales@comlet.de?subject=cETK Cloud Service 
 <p>This control environment runs on every platform supported by <a href="../../cli/"><abbr title="comlet Embedded TestKit Command Line Interface">cetk-cli</abbr></a>:</p>
 <ul>
 <li>Windows 10/11 (AMD64)</li>
-<li>Linux (AMD64/ARM64) - glibc 2.17+<sup id="fnref:10"><a class="footnote-ref" href="#fn:10">1</a></sup></li>
+<li>Linux (AMD64/ARM64) - glibc 2.17+<sup id="fnref:10"><a class="footnote-ref" href="#fn:10">3</a></sup></li>
 <li>macOS (Apple Silicon) &gt;= Ventura (Version 13)</li>
 </ul>
 <h2 id="environment-variables">Environment Variables<a class="headerlink" href="#environment-variables" title="Permanent link">&para;</a></h2>
@@ -1390,7 +1390,7 @@ Feel free to contact <a href="mailto:sales@comlet.de?subject=cETK Cloud Service 
 <ul>
 <li><code>--environment=cloud</code></li>
 <li><code>--cloud-api-key</code>: API Key that can be obtained from the cloud service's self-service portal</li>
-<li><code>--cloud-customer-id</code>: Customer ID that is given by comlet upon active cloud subscription<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">5</a></sup></li>
+<li><code>--cloud-customer-id</code>: Customer ID that is given by comlet upon active cloud subscription<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup></li>
 </ul>
 <details class="tip">
 <summary>Tip</summary>
@@ -1399,7 +1399,7 @@ Feel free to contact <a href="mailto:sales@comlet.de?subject=cETK Cloud Service 
 <h2 id="sources-upload">Sources Upload<a class="headerlink" href="#sources-upload" title="Permanent link">&para;</a></h2>
 <p><a href="../../cli/"><abbr title="comlet Embedded TestKit Command Line Interface">cetk-cli</abbr></a> will upload <a href="../../home_folder/source_home/"><code>Source Home</code></a> to the cloud service before executing
 any <a href="../#supported-executables">supported executable</a>. It will also evaluate a hash based on the sources to uniquely
-identify them and skip upload if sources already exist<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">3</a></sup>.</p>
+identify them and skip upload if sources already exist<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">1</a></sup>.</p>
 <details class="tip">
 <summary>Tip</summary>
 <p>If an upload shall be forced even though the sources already exist, the <a href="../../cli/global_options/#--cloud-force-upload">global option</a>
@@ -1407,9 +1407,17 @@ identify them and skip upload if sources already exist<sup id="fnref:2"><a class
 </details>
 <p>If additional files from <a href="../../home_folder/output_home/"><code>Output Home</code></a> or <a href="../../home_folder/temp_home/"><code>Temp Home</code></a> shall be uploaded, the <a href="../../cli/global_options/#--cloud-add-upload-path-path">global option</a>
     <code>--cloud-add-upload-path</code> may be used. Files within this path are not filtered by the allowlist but also not recursively considered.  </p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Some system or sensitive folders are in general not allowed for sources to be uploaded from.
+This is platform-specific and includes both system root and global config folders as well as
+some tool-specific ones from the user's home.</p>
+<p>There will be an error message indicating that <strong>the source path is not allowed to be uploaded</strong>.
+In such case, it is adviced to move <a href="../../home_folder/source_home/"><code>Source Home</code></a> into a different base folder.</p>
+</div>
 <h3 id="filter-sources-for-upload">Filter Sources for Upload<a class="headerlink" href="#filter-sources-for-upload" title="Permanent link">&para;</a></h3>
 <p>To prevent uncontrolled upload of any file within <a href="../../home_folder/source_home/"><code>Source Home</code></a>, <a href="../../cli/"><abbr title="comlet Embedded TestKit Command Line Interface">cetk-cli</abbr></a> uses an allowlist to filter folders and files
-based on their relative path within <a href="../../home_folder/source_home/"><code>Source Home</code></a><sup id="fnref:3"><a class="footnote-ref" href="#fn:3">4</a></sup>.</p>
+based on their relative path within <a href="../../home_folder/source_home/"><code>Source Home</code></a><sup id="fnref:3"><a class="footnote-ref" href="#fn:3">2</a></sup>.</p>
 <p>The default allowlist is part of the <a href="../../cli/init/"><code>init</code> command</a> and may be adjusted to project's needs.</p>
 <p>See <a href="../../home_folder/source_home/#allowlist-file-for-cloud-upload"><code>Source Home</code> for further details</a>.</p>
 <h2 id="output-download">Output Download<a class="headerlink" href="#output-download" title="Permanent link">&para;</a></h2>
@@ -1426,20 +1434,20 @@ the cloud service together with the customer ID.</p>
 <div class="footnote">
 <hr />
 <ol>
-<li id="fn:10">
-<p>Tested under Ubuntu 20.04 LTS onwards, Debian 11.3.0 onwards&#160;<a class="footnote-backref" href="#fnref:10" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-</li>
-<li id="fn:1">
-<p>Tested under Ubuntu 20.04 LTS onwards, Debian 11.3.0 onwards&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 2 in the text">&#8617;</a></p>
-</li>
 <li id="fn:2">
-<p>Comparable to the commit hash of git&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+<p>Comparable to the commit hash of git&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 <li id="fn:3">
-<p>Allowlist is defined in git wildmatch patterns&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+<p>Allowlist is defined in git wildmatch patterns&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:10">
+<p>Tested under Ubuntu 20.04 LTS onwards, Debian 11.3.0 onwards&#160;<a class="footnote-backref" href="#fnref:10" title="Jump back to footnote 3 in the text">&#8617;</a></p>
 </li>
 <li id="fn:4">
-<p>Alongside access to the cloud service's self-service portal&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+<p>Alongside access to the cloud service's self-service portal&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:1">
+<p>Tested under Ubuntu 20.04 LTS onwards, Debian 11.3.0 onwards&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 5 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
@@ -1508,7 +1516,7 @@ the cloud service together with the customer ID.</p>
       <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.tracking", "navigation.top", "navigation.instant", "navigation.instant.progress", "navigation.indexes", "content.code.annotate", "content.code.copy", "content.tabs.link", "version-dropdown"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
     
   </body>

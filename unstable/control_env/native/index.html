@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
     
     
       
@@ -30,7 +30,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e53b48f4.min.css">
       
       
 
@@ -1264,7 +1264,7 @@ setting <code>CETK_PYTHON</code> environment variable.</p>
 <p>This control environment runs on every platform supported by <a href="../../cli/"><abbr title="comlet Embedded TestKit Command Line Interface">cetk-cli</abbr></a>:</p>
 <ul>
 <li>Windows 10/11 (AMD64)</li>
-<li>Linux (AMD64/ARM64) - glibc 2.17+<sup id="fnref:10"><a class="footnote-ref" href="#fn:10">1</a></sup></li>
+<li>Linux (AMD64/ARM64) - glibc 2.17+<sup id="fnref:10"><a class="footnote-ref" href="#fn:10">4</a></sup></li>
 <li>macOS (Apple Silicon) &gt;= Ventura (Version 13)</li>
 </ul>
 <h2 id="environment-variables">Environment Variables<a class="headerlink" href="#environment-variables" title="Permanent link">&para;</a></h2>
@@ -1280,8 +1280,8 @@ setting <code>CETK_PYTHON</code> environment variable.</p>
 <h2 id="option-start-a-docker-compose-environment">Option: Start a Docker Compose Environment<a class="headerlink" href="#option-start-a-docker-compose-environment" title="Permanent link">&para;</a></h2>
 <p>If needed, the native control environment supports starting and stopping a Docker compose environment automatically that test suites
 may utilize.</p>
-<p>A <a href="https://docs.docker.com/engine/" target="_blank">Docker engine</a><sup id="fnref:20"><a class="footnote-ref" href="#fn:20">2</a></sup> and <a href="https://docs.docker.com/compose/" target="_blank">Compose v2 cli-plugin</a><sup id="fnref:21"><a class="footnote-ref" href="#fn:21">3</a></sup> are expected to be installed and usable by the current user.
-This can be achieved by using <a href="https://docs.docker.com/desktop/" target="_blank">Docker Desktop</a>, <a href="https://rancherdesktop.io/" target="_blank">Ranger Desktop</a>, installing the Docker engine natively, using <a href="https://podman.io/" target="_blank">Podman</a><sup id="fnref:22"><a class="footnote-ref" href="#fn:22">4</a></sup> etc.</p>
+<p>A <a href="https://docs.docker.com/engine/" target="_blank">Docker engine</a><sup id="fnref:20"><a class="footnote-ref" href="#fn:20">1</a></sup> and <a href="https://docs.docker.com/compose/" target="_blank">Compose v2 cli-plugin</a><sup id="fnref:21"><a class="footnote-ref" href="#fn:21">2</a></sup> are expected to be installed and usable by the current user.
+This can be achieved by using <a href="https://docs.docker.com/desktop/" target="_blank">Docker Desktop</a>, <a href="https://rancherdesktop.io/" target="_blank">Ranger Desktop</a>, installing the Docker engine natively, using <a href="https://podman.io/" target="_blank">Podman</a><sup id="fnref:22"><a class="footnote-ref" href="#fn:22">3</a></sup> etc.</p>
 <details class="info">
 <summary>Difference to the Docker compose environment started by docker control environment</summary>
 <p>The difference is that the test execution is not part of the Docker compose network (since executed natively).
@@ -1291,17 +1291,17 @@ Whereas the test execution with the Docker control environment is part of the Do
 <div class="footnote">
 <hr />
 <ol>
-<li id="fn:10">
-<p>Tested under Ubuntu 20.04 LTS onwards, Debian 11.3.0 onwards&#160;<a class="footnote-backref" href="#fnref:10" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-</li>
 <li id="fn:20">
-<p>Tested with version 20.10.6 onwards&#160;<a class="footnote-backref" href="#fnref:20" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<p>Tested with version 20.10.6 onwards&#160;<a class="footnote-backref" href="#fnref:20" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 <li id="fn:21">
-<p>Tested with version 2.6.0 onwards&#160;<a class="footnote-backref" href="#fnref:21" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+<p>Tested with version 2.6.0 onwards&#160;<a class="footnote-backref" href="#fnref:21" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 <li id="fn:22">
-<p>Make sure to configure the <code>compose-executable-name</code> CLI option to <code>podman</code>&#160;<a class="footnote-backref" href="#fnref:22" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+<p>Make sure to configure the <code>compose-executable-name</code> CLI option to <code>podman</code>&#160;<a class="footnote-backref" href="#fnref:22" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:10">
+<p>Tested under Ubuntu 20.04 LTS onwards, Debian 11.3.0 onwards&#160;<a class="footnote-backref" href="#fnref:10" title="Jump back to footnote 4 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
@@ -1370,7 +1370,7 @@ Whereas the test execution with the Docker control environment is part of the Do
       <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.tracking", "navigation.top", "navigation.instant", "navigation.instant.progress", "navigation.indexes", "content.code.annotate", "content.code.copy", "content.tabs.link", "version-dropdown"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
     
   </body>
