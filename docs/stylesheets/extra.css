@@ -73,3 +73,20 @@
         padding: 0.5em 1.2em;
     }
 }
+
+/* Inline code links (backtick-styled links) in main content */
+.md-typeset a code {
+    /* Render like normal links: red text, no grey background */
+    /* background-color: transparent; */
+    color: #7f0000 !important;
+    text-decoration: underline;
+    /* box-shadow: none; */
+}
+
+/* Keep the same appearance on hover/focus to avoid color flip */
+.md-typeset a:hover code,
+.md-typeset a:focus code {
+    /* background-color: transparent; */
+    color: #7f0000 !important;
+    text-decoration: underline;
+}
