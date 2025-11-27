@@ -172,5 +172,14 @@ Forces upload of sources to cETK cloud service — even if they exist.
 - Supported control environment(s): cloud
 - Environment variable(s): `CETK_CLOUD_FORCE_UPLOAD`, `CETK_CLOUD_ENABLE_FORCE_UPLOAD`[^1]
 
+### `--cloud-status-poll-max-timeout` (int)
+Maximum time in seconds to wait for cETK cloud service to finish its execution task.
+If this timeout expires, execution will be aborted. If this timeout is zero (`0`), the client application will not
+abort the execution at all.
+
+- Default: 3600
+- Supported control environment(s): cloud
+- Environment variable(s): `CETK_CLOUD_STATUS_POLL_MAX_TIMEOUT`
+
 [^1]: The `ENABLE` environment variable just needs to be defined, its value does not matter to enable the option.
       Whereas the "normal" variable needs to have a truth-y or false-y value
