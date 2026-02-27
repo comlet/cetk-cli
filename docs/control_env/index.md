@@ -28,9 +28,9 @@ The Following environment variables are set and available during the execution w
 As in: "_The host that is using [cetk-cli](../cli/index.md) to run [supported executables](#supported-executables)_" 
 
 * `CETK_SOURCE_HOME`: absolute path to [`Source Home`](../home_folder/source_home.md)
-* `CETK_SOURCE_HOME_POSIX`: absolute path to [`Source Home`](../home_folder/source_home.md) in posix format[^1][^3]
+* `CETK_SOURCE_HOME_POSIX`: absolute path to [`Source Home`](../home_folder/source_home.md) in posix format[^1][^3][^6]
 * `CETK_OUTPUT_HOME`: absolute path to [`Output Home`](../home_folder/output_home.md)
-* `CETK_OUTPUT_HOME_POSIX`: absolute path to [`Output Home`](../home_folder/output_home.md) in posix format[^1][^4]
+* `CETK_OUTPUT_HOME_POSIX`: absolute path to [`Output Home`](../home_folder/output_home.md) in posix format[^1][^4][^6]
 * `CETK_TMP_HOME`: absolute path to [`Temp Home`](../home_folder/temp_home.md)
 * `CETK_ENVIRONMENT`: one of the following: `native`, `docker`, `cloud`
 
@@ -45,3 +45,4 @@ As in: "_The host that is using [cetk-cli](../cli/index.md) to run [supported ex
 [^3]: If the host platform is already posix (e.g., Linux) then this is the same as `CETK_SOURCE_HOME`
 [^4]: If the host platform is already posix (e.g., Linux) then this is the same as `CETK_OUTPUT_HOME`
 [^5]: If any of those variables have been used to [configure cetk-cli](../cli/config.md), they may be updated during execution
+[^6]: Posix format preserves user/platform given case but the drive letter on Windows: it is normalized to upper-case.
