@@ -5,7 +5,7 @@ site_description: >-
   This is the documentation of comlet's Embedded TestKit (cETK)
   test automation solution
 
-copyright: Copyright &copy; 2025 comlet Verteilte Systeme GmbH
+copyright: Copyright &copy; 2025-2026 comlet Verteilte Systeme GmbH
 nav:
   - Overview: index.md
   - Control Environments:
