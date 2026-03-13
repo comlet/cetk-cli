@@ -24,8 +24,7 @@ This subfolder is optional and may hold project-specific configuration files for
 
 !!! note
     If no project-specific configuration files are used,
-    `cetk-cli` already loads default configs based on many years of best practice usage for the executables `robocop`
-    and `robotidy`. 
+    `cetk-cli` already loads default configs based on many years of best practice usage for the executable `robocop`.
 
 ### Docker Subfolder
 This subfolder is optional and may hold project-specific Docker compose files to be used by the on premise Control

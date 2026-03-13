@@ -10,10 +10,10 @@ are established either by the on premise host interfaces and/or by network via [
 
 * [Robot Framework](https://robotframework.org/){target="_blank"} Version 6/7
     * robot, rebot, testdoc, libdoc
-* [Tidy](https://github.com/MarketSquare/robotframework-tidy){target="_blank"} Version 4.x
-    * robotidy
-* [Robocop](https://github.com/MarketSquare/robotframework-robocop){target="_blank"} Version 5.x
+* [Robocop](https://github.com/MarketSquare/robotframework-robocop){target="_blank"} Version 6/7/8
     * robocop
+* [Testdoc](https://marvkler.github.io/robotframework-testdoc/index.html){target="_blank"} Beta phase tested with version 0.6.0
+    * testdoc_ext
 
 ## Encapsulation Flavors
 
