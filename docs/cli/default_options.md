@@ -104,15 +104,21 @@ Tag for test cases that shall not be run at all.
 ### Default Output Documentation File
 Defines `<Output Home>/cetk_testdoc.html` as default output file and HTML format.
 
+## testdoc_ext (beta)
+
+### Tags
+#### `dont_run`
+Tag for test cases that shall not be run at all.
+
+### Default Output Documentation File
+Defines `<Output Home>/cetk_testdoc_ext.html` as default output file and HTML format.
+
 ## robocop
 
 ### Default config
-Default config for linting that fits perfectly with the beautifier `robotidy`.
+Default config for linting and formatting[^1].
 
 ### Default Output Report
 Defines `<Output Home>/cetk_lint_report.txt` as default output report.
 
-## robotidy
-
-### Default config
-Default config for beautifying that fits perfectly with the linter `robocop`.
+[^1]: Formerly done by the dedicated, yet deprecated executable `robotidy`
