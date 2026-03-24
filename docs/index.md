@@ -19,9 +19,8 @@ The architecture of Embedded TestKit inherits from the generic Test Automation A
     * [Control Environment](control_env/index.md)
         * [Robot Framework](https://robotframework.org/){target="_blank"} as Test Automation Framework
         * [Python](https://www.python.org/){target="_blank"}
-        * [Tidy](https://github.com/MarketSquare/robotframework-tidy){target="_blank"} as test source beautifier
+        * [Robocop](https://github.com/MarketSquare/robotframework-robocop){target="_blank"} for static (test) source code analysis and (test) source beautifier
         * [KeePass Library](https://github.com/loomanw/robotframework-keepasslibrary){target="_blank"} for managing secrets
-        * [Robocop](https://github.com/MarketSquare/robotframework-robocop){target="_blank"} for static (test) source code analysis
         * Optional
             * Thirdparty/external technology/device driver libraries
             * [comlet Embedded Libraries (cEL)](cel/index.md)
