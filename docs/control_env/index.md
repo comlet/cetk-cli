@@ -12,7 +12,7 @@ are established either by the on premise host interfaces and/or by network via [
     * robot, rebot, testdoc, libdoc
 * [Robocop](https://github.com/MarketSquare/robotframework-robocop){target="_blank"} Version 6/7/8
     * robocop
-* [Testdoc](https://marvkler.github.io/robotframework-testdoc/index.html){target="_blank"} Beta phase tested with version 0.6.0
+* [Testdoc](https://marvkler.github.io/robotframework-testdoc/index.html){target="_blank"} Beta phase tested with version 0.7.0 (minimum required 0.6.4)
     * testdoc_ext
 
 ## Encapsulation Flavors
